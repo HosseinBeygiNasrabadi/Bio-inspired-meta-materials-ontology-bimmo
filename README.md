@@ -1,6 +1,6 @@
 
 ![Build Status](https://github.com/HosseinBeygiNasrabadi/Bio-inspired-meta-materials-ontology/actions/workflows/qc.yml/badge.svg)
-# MBio-inspired Meta Materials Ontology
+# Bio-inspired Meta Materials Ontology
 
 Description: None
 
