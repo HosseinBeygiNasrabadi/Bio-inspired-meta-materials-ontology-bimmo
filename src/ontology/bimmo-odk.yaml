@@ -1,0 +1,25 @@
+id: bimmo
+title: "MBio-inspired Meta Materials Ontology"
+github_org: HosseinBeygiNasrabadi
+git_main_branch: main
+repo: Bio-inspired-meta-materials-ontology
+uribase: https://w3id.org/
+uribase_suffix: bimme
+
+release_artefacts:
+  - base
+  - full
+  - simple
+primary_release: full
+export_formats:
+  - owl
+  - ttl
+remove_owl_nothing: true
+
+import_group:
+  products:
+  - id: pmdco
+    mirror_from: https://materialdigital.github.io/core-ontology/ontology.owl
+    module_type: mirror
+namespaces:
+  - https://w3id.org/bimmo/
