@@ -1,4 +1,4 @@
-# Contributing to MBio-inspired Meta Materials Ontology
+# Contributing to Bio-inspired Meta Materials Ontology
 
 :+1: First of all: Thank you for taking the time to contribute!
 
