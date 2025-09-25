@@ -9,7 +9,7 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
 Ontology(<https://w3id.org//bimmo.owl>
-Import(<https://w3id.org//bimme/imports/pmdco_import.owl>)
+Import(<https://w3id.org/pmd/co/3.0.0-alpha3>)
 Annotation(dcterms:creator "Amirhossein Bayani")
 Annotation(dcterms:creator "Hossein Beygi Nasrabadi")
 Annotation(dcterms:description "xxxx")
@@ -17,6 +17,10 @@ Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 Annotation(dcterms:title "Bio-inspired Meta Materials Ontology")
 Annotation(rdfs:label "biMMO")
 
+Declaration(Class(<https://w3id.org/BIMMO_0000001>))
+Declaration(Class(<https://w3id.org/BIMMO_0000002>))
+Declaration(Class(<https://w3id.org/BIMMO_0000003>))
+Declaration(Class(<https://w3id.org/BIMMO_0000004>))
 Declaration(Class(<https://w3id.org//BIMMO_0000000>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
@@ -29,7 +33,7 @@ Declaration(AnnotationProperty(dcterms:title))
 
 AnnotationAssertion(rdfs:label dcterms:description "description")
 
-# Annotation Property: dcterms:license (license)
+# Annotation Property: dcterms:license (dcterms:license)
 
 AnnotationAssertion(rdfs:label dcterms:license "license")
 
@@ -39,9 +43,34 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 
 
 
+
 ############################
 #   Classes
 ############################
+
+# Class: <https://w3id.org/BIMMO_0000001> (lithography)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/BIMMO_0000001> "lithography"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/BIMMO_0000001> "")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/BIMMO_0000001> "Lithography is a process used to transfer patterns onto a surface, typically by using light, electron beams, or other methods, often as a step in micro- and nanofabrication.")
+EquivalentClasses(<https://w3id.org/BIMMO_0000001> ObjectIntersectionOf(<https://w3id.org/pmd/co/PMD_0000833> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/BFO_0000040>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <http://purl.obolibrary.org/obo/BFO_0000040>)))
+SubClassOf(<https://w3id.org/BIMMO_0000001> <https://w3id.org/pmd/co/PMD_0000833>)
+
+# Class: <https://w3id.org/BIMMO_0000002> (nanolithography)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/BIMMO_0000002> "nanolithography"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <https://w3id.org/BIMMO_0000002> "Nanolithography is a set of techniques for creating extremely small patterns and structures at the nanometer scale, mainly used in nanotechnology and semiconductor fabrication.")
+SubClassOf(<https://w3id.org/BIMMO_0000002> <https://w3id.org/BIMMO_0000001>)
+
+# Class: <https://w3id.org/BIMMO_0000003> (self healing)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/BIMMO_0000003> "self healing"@en)
+SubClassOf(<https://w3id.org/BIMMO_0000003> <http://purl.obolibrary.org/obo/BFO_0000015>)
+
+# Class: <https://w3id.org/BIMMO_0000004> (bio inspired polymer)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/BIMMO_0000004> "bio inspired polymer"@en)
+SubClassOf(<https://w3id.org/BIMMO_0000004> <https://w3id.org/pmd/co/PMD_0000888>)
 
 # Class: <https://w3id.org//BIMMO_0000000> (root node)
 
